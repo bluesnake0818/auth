@@ -49,6 +49,8 @@ function AuthContent({ isLogin, onAuthenticate }) {
       });
       return;
     }
+    console.log('AuthContent: ', email)
+    console.log('AuthContent: ', password)
     onAuthenticate({ email, password });
   }
 
